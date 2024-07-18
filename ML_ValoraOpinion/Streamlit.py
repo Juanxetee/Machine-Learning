@@ -4,12 +4,9 @@ import pickle
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-with open('Modelo/best_model.pkl', 'rb') as file:
-    best_model = pickle.load(file)
-with open('Modelo/best_model_rf.pkl', 'rb') as file:
+with open('Modelo/best_modelfinal_rf.pkl', 'rb') as file:
     best_model_rf = pickle.load(file)
-with open('Modelo/best_model_svm.pkl', 'rb') as file:
-    best_model_svm = pickle.load(file)
+    
 with open('vectorizer.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
